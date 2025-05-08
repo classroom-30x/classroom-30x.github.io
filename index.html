@@ -14221,7 +14221,7 @@
 </section>
 <section class="layout-text pt-4 pb-5">
   <div class="container-fluid">
-    <
+    
                 </div>
                 <div class="col-12 col-md-6 col-lg-8 d-md-flex justify-content-end">
                     <ul class="nav">
@@ -14238,6 +14238,20 @@
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="/assets/js/bs-init.js"></script>
     <script src="/assets/js/search_v1_0.js"></script>
+    <script>
+        // Register the service worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('Service Worker registered:', registration);
+                    })
+                    .catch(error => {
+                        console.error('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
 </body>
 
 </html>
