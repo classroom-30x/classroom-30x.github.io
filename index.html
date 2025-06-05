@@ -54,28 +54,27 @@
         <section class="pt-4 pb-5">
   <div class="container-fluid">
       <div class="card-masonry">
-        
-    
-<style>
+  <style>
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f9f9f9;
     color: #333;
     margin: 0;
     padding: 0;
-    text-align: center;
   }
 
   header, main, footer {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
+    text-align: center;
   }
 
-  h1, h2 {
+  h1 {
     color: #222;
     font-weight: 700;
-    margin-bottom: 10px;
+    font-size: 28px; /* Reduced from larger size */
+    margin-bottom: 15px;
   }
 
   p {
@@ -83,34 +82,49 @@
     line-height: 1.6;
   }
 
-  ul {
-    list-style: none;
-    padding: 0;
+  /* Full-width games section */
+  .games-section {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    box-sizing: border-box;
   }
 
-  li {
-    margin: 8px 0;
-    font-size: 1rem;
+  .game-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
 
-  a {
-    color: #0066cc;
+  .game-item {
+    width: 160px;
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .game-item a {
     text-decoration: none;
+    color: #0066cc;
+    font-weight: 600;
   }
 
-  a:hover {
+  .game-item a:hover {
     text-decoration: underline;
   }
 
   footer {
+    text-align: center;
     font-size: 0.9rem;
     color: #777;
-  }
-
-  nav a {
-    margin: 0 10px;
+    padding: 20px;
   }
 </style>
+      
+    
 
     
 
